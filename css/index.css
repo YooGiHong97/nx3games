@@ -1,0 +1,44 @@
+html{padding:0; margin:0; overflow-x: hidden;}
+ul, li{list-style: none;}
+body, html{-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+/****************************************************************************/
+/* FONT-FAMILY 정의*/
+/****************************************************************************/
+@font-face{
+    src:url("../fonts/RokafSansKR-Bold.ttf");           
+    font-family: 'RokafSansKR-Bold'
+}
+@font-face{
+    src:url("../fonts/RokafSansKR-Medium.ttf");           
+    font-family: 'RokafSansKR-Medium'
+}
+@font-face{
+    src:url("../fonts/NotoSansKR-Bold.otf");
+    font-family: 'NotoSansKR-Bold'
+}
+@font-face{
+    src:url("../fonts/NotoSansKR-Medium.otf");
+    font-family: 'NotoSansKR-Medium'
+}
+@font-face{
+    src:url("../fonts/NotoSansKR-Regular.otf");
+    font-family: 'NotoSansKR-Regular'
+}
+@font-face{
+    src:url("../fonts/NotoSansKR-Thin.otf");
+    font-family: 'NotoSansKR-Thin'
+}
+/****************************************************************************/
+#table-body-mm{display:flex; justify-content: space-around; flex-direction: row; margin-left: 10px; width: calc(312% / 3);}
+
+
+.news_text_wrap_ind{margin-left:-220px; margin-top:50px; margin-bottom:20px;}
+.news_tit_ind{font-size:45px; font-family: 'NotoSansKR-Bold'; position:relative; left:-340px;}
+
+#sub_img_set{width:350px; height:210px;}
+
+.alink{color:#000; text-decoration-line:none;}
+.alink:hover{color:#000;}
+
+.blink{color:#000; text-decoration-line:none;}
+.blink:hover{color:#000;}
