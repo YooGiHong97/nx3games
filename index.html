@@ -203,6 +203,7 @@
         <div class="home_logo03"><img src="./images/homelogo_03.png"  alt="image"></div>
       </div>
 
+      <!-- image lady character video-->
       <div class="vedd">
         <video autoplay muted loop playsinline id="charVideo" data-resize="true" preload="none">
           <source src="./images/home/bg_loop_autoplay.mp4" type="video/mp4">
@@ -215,24 +216,19 @@
         </video>
       </div>
 
+      <!-- video container scroll -->
+      <!-- web icon  -->
       <div class="KeyVisualScroll">
         <a href="#main-content" class="KeyVisualScroll-link">
           <span class="KeyVisualScroll-arrow"></span>
         </a>
       </div>
-
+      <!-- mob icon -->
       <div class="KeyVisualScrollM">
         <a href="#main-content" class="KeyVisualScroll-link">
           <span class="KeyVisualScroll-arrowM"></span>
         </a>
       </div>
-
-      <!-- mob icon -->
-      <!-- <div class="KeyVisualScrollM">
-        <a href="#main-content" class="KeyVisualScroll-link">
-          <span class="KeyVisualScroll-arrowM"></span>
-        </a>
-      </div> -->
       <!-- .video container scroll -->
     </div>
 </div>
@@ -405,6 +401,11 @@ $('header .inner').toggleClass('scrolled', $(this).scrollTop()>70);
 $('header .top_wrap').toggleClass('scrolled', $(this).scrollTop()>70);
 });
 
+$(window).scroll(function(){
+// $('NextXfooterWeb').toggleClass('scrolled2', $(this).scrollTop()>700);
+// console.log('scrolled 2')
+});
+
 $(document).ready(function(){
 
     $('header .top_wrap').hover(function(){
@@ -414,10 +415,19 @@ $(document).ready(function(){
         $("bg-transparent2").removeClass("active");
     });
   
-  });
+});
 
+const nextBanner = document.querySelector('.NextXfooterWeb');
+const nx3Footer = document.querySelector('.ftr_cont');
+window.addEventListener('scroll', nextXup)
 
-
+function nextXup() {
+    if(window.scrollY > nextBanner.offsetHeight + 1630) {
+      nextBanner.classList.add('active')
+    } else {
+      nextBanner.classList.remove('active')
+    }
+}
 
 </script>
 </body>
